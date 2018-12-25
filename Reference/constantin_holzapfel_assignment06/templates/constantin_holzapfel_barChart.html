@@ -1,0 +1,20 @@
+<!-- Assignment06 by Constantin Holzapfel 3.12.18 -->
+
+{% extends "base.html" %}
+{% block content %}
+
+<script src="{{ url_for('static', filename='constantin_holzapfel_barChart.js') }}" type="text/javascript"></script>
+
+<script>
+var dataset = {{ data | safe }};
+
+window.onload = function() {
+myPlot = barChart(dataset);
+myPlot.init();
+
+//short tutorial
+setTimeout(function(){alert("Click on the bars to generate a new dataset!")},1000);
+}
+
+</script>
+{% endblock %}

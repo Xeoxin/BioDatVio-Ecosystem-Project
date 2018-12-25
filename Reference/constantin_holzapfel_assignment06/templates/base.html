@@ -1,0 +1,38 @@
+<!-- //Assignment06 by Constantin Holzapfel 3.12.18 -->
+
+<html lang="en" dir="ltr">
+<head>
+
+<title>Assignment06 by Constantin Holzapfel</title>
+<meta charset="iso-8859-1">
+</head>
+
+<link rel="stylesheet" type="text/css" href= "{{ url_for('static', filename='constantin_holzapfel_assignment06.css') }}" >
+
+
+<body>
+<header id="header">
+        <div class="BigSpacer">
+          <h1>Extend the bubble chart</h1>
+        </div>
+        <div class="vertical">
+          <nav >
+            <ul>
+              <li><a href="{{ url_for('bubbleChart') }}">Bubble chart</a></li>
+              <li><a href="{{ url_for('barChart') }}">Bar chart</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+</header>
+
+<script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+
+<div id ="container">
+<div id ="content"></div>
+
+{% block content %}
+{% endblock %}
+</div>
+
+</body>
