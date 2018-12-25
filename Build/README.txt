@@ -1,0 +1,1 @@
+Build directory contains all files that are needed for a working project.

@@ -1,0 +1,1 @@
+The sandbox directory is a playground for every project developer. You can do anything here.
