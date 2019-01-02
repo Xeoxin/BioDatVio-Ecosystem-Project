@@ -1,1 +1,0 @@
-The milestone directory contains all files for the final submission. Subdirectories should contain different stages of submission reffering to different milestones.
